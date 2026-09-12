@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.uv_home/
+.uv_bin/
+
+# dev
+.geany
+*.swp
+
+# accidental socks
+*.sock

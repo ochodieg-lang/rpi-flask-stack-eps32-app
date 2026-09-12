@@ -1,0 +1,17 @@
+[project]
+name = "lab-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14.2"
+dependencies = [
+    "adafruit-circuitpython-dht>=4.0.12",
+    "flask>=3.1.3",
+    "rpi-gpio>=0.7.1",
+    "uwsgi>=2.0.31",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.18",
+]

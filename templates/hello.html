@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Static page</title>
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/skeleton.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/static/images/favicon.png">
+</head>
+<body>	
+	<!-- 1. Displaying a variable passed from Python -->
+	<h1>{{ message }}</h1>
+
+	<!-- 2. Conditional Statement -->
+	{% if name == "ivan" %}
+		<p>Admin mode active.</p>
+		<!-- 3. Loop Statement -->
+		<h3>Skills to learn:</h3>
+			<ul>
+				{% for item in items %}
+    					<li>{{ item }}</li>
+				{% endfor %}
+			</ul>
+    	{% else %}
+        	<p>{{ message_2 }}</p>
+    	{% endif %}
+
+</body>
+</html>
+
+
+
